@@ -23,28 +23,21 @@ local principalTab = window:Tab("Principal")
 
 --Sections
 local cerberusSection = principalTab:Section("Cerberus")
-
 local hadesSection = principalTab:Section("Hades")
-
 local demonSection = principalTab:Section("Demon")
-
 local rageSection = principalTab:Section("Rage")
 
 --Toggles
 local cerberusToggle = cerberusSection:Toggle("Aimbot", function()
 	print("Seção Cerberus")
 end)
-
 local hadesToggle = hadesSection:Toggle("Fov", function()
 	print("Seção Hades")
 end)
-
 local demonToggle = demonSection:Toggle("Esp", function()
 	print("Seção Demon")
 end)
-
-local rageToggle = rageSection:Toggle("Speed", function(Value)
-	_G.speed = Value
+local rageToggle = rageSection:Toggle("Speed", function()
 	speed()
 end)
 
